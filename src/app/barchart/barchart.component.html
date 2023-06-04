@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="barContainer">
+  <div class="bars" *ngFor="let item of exampleData">
+    <span>{{item.value}}</span>
+    <div class="bar" [style.background-color]="item.color" [style.height]="item.size"></div>
+  </div>
+  </div>
+  <div class="dividerLine"></div>
+  <div class="legend">
+    <span *ngFor="let item of exampleData">{{item.legend}}</span>
+  </div>
+</div>
